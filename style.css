@@ -27,23 +27,94 @@
 }
 
 .website_categories {
-	border-color: #1A237E;
+	border-color: #00072D;
 	border-style: solid;
-	background-color: #1A237E;
+	background-color: #00072D;
 	font-family: 'Roboto', sans-serif;
 }
 
 .website_categories > p {
 	border-bottom-color: white;
 	border-bottom-style: solid;
-	height: 50px;
 	display: flex;
 	align-items: flex-end;
+	color: white;
 }
 
 .website_portfolio {
 	background-color: #EFF9F0;
 	height: 400px;
+}
+
+.website_team {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.website_team > p {
+}
+
+.website_team > img {
+	border-radius: 100px;
+	border-color: #00072D;
+	border-style: solid;
+	margin: 10px;
+}
+
+.website_contact {
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+.website_header {
+	height: 50px;
+	padding-top: 30px;
+}
+
+.website_introduction {
+
+}
+
+.website_categories {
+
+}
+
+.website_portfolio {
+
+}
+
+.website_team {
+
+}
+
+.website_team > img {
+	width: 100px;
+}
+
+.website_contact {
+
+}
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+
+.website_header {
+	height: 50px;
+	padding-top: 30px;
+}
+
+.website_introduction {
+
+}
+
+.website_categories {
+
+}
+
+.website_portfolio {
+
 }
 
 .website_team {
@@ -53,8 +124,9 @@
 .website_contact {
 
 }
+}
 
-@media (max-width: 600px) {
+@media (min-width: 601px) and (max-width: 1204px) {
 .website_header {
 	height: 50px;
 	padding-top: 30px;
@@ -78,4 +150,4 @@
 .website_contact {
 
 }
-}
+}	
