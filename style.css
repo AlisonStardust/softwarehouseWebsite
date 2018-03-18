@@ -1,6 +1,7 @@
 .website {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 .website_header {
@@ -48,11 +49,24 @@
 
 .website_team {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
-	flex-direction: column;
+	justify-content: center;
+	position: relative;
 }
 
-.website_team > p {
+.website_team--description {
+ display: none;
+}
+
+.website_team > img:hover {
+ visibility: visible;
+ opacity: 0.5; 
+}
+
+.image:hover .drugadupa {
+ visibility: visible;
+ opacity: 0.7; 
 }
 
 .website_team > img {
@@ -60,13 +74,16 @@
 	border-color: #00072D;
 	border-style: solid;
 	margin: 10px;
+	display: block;
 }
 
 .website_contact {
-
+	background-color: #00072D;
+	height: 300px;
+	color: white;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 10px) and (max-width: 480px) {
 
 .website_header {
 	height: 50px;
@@ -91,6 +108,10 @@
 
 .website_team > img {
 	width: 100px;
+}
+
+.website_team img:focus {
+	opacity: 0.5;	
 }
 
 .website_contact {
