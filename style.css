@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	background-color: #EFF9F0;
 }
 
 .website_header {
@@ -66,6 +67,9 @@
 	justify-content: center;
 	align-items: center;
 	font-family: 'Roboto', sans-serif;
+	background-color: #00072D;
+	padding: 10px;
+	color: white;
 }
 
 .website_team {
@@ -73,7 +77,8 @@
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 25px;
+	padding-bottom: 25px;
+	background-color: #EFF9F0;
 }
 
 .website_team--description {
@@ -134,7 +139,11 @@
 
 .website_portfolio {
 	flex-direction: column;
-	height: 600px;
+	height: 500px;
+}
+
+.website_portfolio > span {
+	padding-bottom: 100px;
 }
 
 .website_team {
