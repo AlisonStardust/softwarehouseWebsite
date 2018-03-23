@@ -60,6 +60,7 @@
 .website_portfolio > img {
 	height: 100px;
 	width: 100px;
+	margin: 40px;
 }
 
 .website_team--header {
@@ -139,11 +140,16 @@
 
 .website_portfolio {
 	flex-direction: column;
-	height: 500px;
+	height: 700px;
 }
 
 .website_portfolio > span {
-	padding-bottom: 100px;
+	padding-bottom: 70px;
+}
+
+.website_portfolio > img {
+	width: 395px;
+	height: 195px;
 }
 
 .website_team {
@@ -191,24 +197,34 @@
 
 }
 
-.website_portfolio {
+.website_categories > p {
+	height: 50px;
+}
 
+.website_portfolio {
+	height: 800px;
 }
 
 .website_team {
 
 }
 
-.website_contact {
+.website_team > img {
+	width: 130px;
+}
 
+
+.website_contact {
+ height: 300px;
 }
 
 .website_contact--elements {
 	display: flex;
+	justify-content: center;
 }
 
 .website_contact--elements > img {
-
+	padding: 18px;
 }
 }
 
