@@ -19,7 +19,6 @@
 	background-color: #EFF9F0;
 	color: black;
 	text-align: center;
-	height: 350px;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
@@ -45,7 +44,6 @@
 
 .website_portfolio {
 	background-color: #EFF9F0;
-	height: 1200px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -61,6 +59,8 @@
 	height: 100px;
 	width: 100px;
 	margin: 40px;
+	border: 1px solid black;
+	box-shadow: 0 4px 8px 0 #c8cbd1, 0 6px 20px 0 #c8cbd1;
 }
 
 .website_team--header {
@@ -78,7 +78,7 @@
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	padding-bottom: 25px;
+	padding-top: 5px;
 	background-color: #EFF9F0;
 }
 
@@ -96,6 +96,13 @@
 	border-style: solid;
 	margin: 10px;
 	display: block;
+	box-shadow: 0 4px 8px 0 #c8cbd1, 0 6px 20px 0 #c8cbd1;
+}
+
+.website_map {
+	width: 100%;
+	padding-top: 10px;
+	border: 0;
 }
 
 .website_contact--header {
@@ -107,16 +114,11 @@
 
 .website_contact {
 	background-color: #00072D;
-	height: 350px;
 	color: white;
 }
 
 .website_contact--elements {
 	display: flex;
-}
-
-.website_contact--elements > img {
-
 }
 
 @media (min-width: 10px) and (max-width: 480px) {
@@ -127,11 +129,7 @@
 }
 
 .website_introduction {
-
-}
-
-.website_categories {
-
+	height: 450px;
 }
 
 .website_categories > p {
@@ -148,12 +146,8 @@
 }
 
 .website_portfolio > img {
-	width: 395px;
-	height: 195px;
-}
-
-.website_team {
-
+	width: 316px;
+	height: 156px;
 }
 
 .website_team > img {
@@ -164,8 +158,14 @@
 	opacity: 0.5;	
 }
 
-.website_contact {
+.website_team {
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
 
+.website_map {
+	width: 100%;
+	height: 200px;
 }
 
 .website_contact--elements {
@@ -174,15 +174,14 @@
 	flex-direction: column;
 }
 
-.website_contact--elements > img {
-	height: 80px;
-	width: 80px;
-	margin: 5px;
+.image {
+	height: 100px;
+	width: 100px;
+	margin: 10px;
+}
 }
 
-}
-
-@media (min-width: 481px) and (max-width: 600px) {
+@media (min-width: 481px) and (max-width: 650px) {
 
 .website_header {
 	height: 50px;
@@ -190,11 +189,7 @@
 }
 
 .website_introduction {
-
-}
-
-.website_categories {
-
+  height: 450px;
 }
 
 .website_categories > p {
@@ -205,14 +200,24 @@
 	height: 800px;
 }
 
-.website_team {
-
+.website_portfolio > img {
+	width: 395px;
+	height: 195px;
 }
 
 .website_team > img {
 	width: 130px;
 }
 
+.website_team {
+	padding-bottom: 45px;
+	padding-top: 45px;
+}
+
+.website_map {
+	width: 100%;
+	height: 300px;
+}
 
 .website_contact {
  height: 300px;
@@ -223,41 +228,123 @@
 	justify-content: center;
 }
 
-.website_contact--elements > img {
+.website_contact--elements > a {
 	padding: 18px;
 }
 }
 
-@media (min-width: 601px) and (max-width: 1204px) {
+@media (min-width: 651px) and (max-width: 1204px) {
+
 .website_header {
-	height: 50px;
+	font-size: 30px;
+	height: 70px;
 	padding-top: 30px;
 }
 .website_introduction {
-
+	height: 480px;
 }
 
-.website_categories {
-
+.website_categories > p {
+	height: 90px;
 }
 
-.website_portfolio {
+.website_portfolio > img {
+	height: 200px;
+	width: 200px;
+}
 
+.website_team--header {
+	height: 55px;
+	font-size: 30px;
 }
 
 .website_team {
-
+	padding-bottom: 70px;
+	padding-top: 70px;
 }
 
-.website_contact {
+.website_map {
+	width: 100%;
+	height: 400px;
+}
 
+.website_contact--header {
+	font-size: 30px;
 }
 
 .website_contact--elements {
 	display: flex;
+	justify-content: center;
 }
 
-.website_contact--elements > img {
+.website_contact--elements > a {
+	padding: 20px;
+}
+}
 
+@media (min-width: 1205px) and (max-width: 3000px) {
+
+.website_header {
+	font-size: 30px;
+	height: 70px;
+	padding-top: 30px;
+}
+
+.website_introduction {
+	height: 480px;
+}
+
+.website_categories > p {
+	height: 90px;
+}
+
+.website_portfolio {
+	height: 1200px;
+}
+
+.website_portfolio > span {
+	font-family: 'Roboto', sans-serif;
+	padding-bottom: 60px;
+	font-size: 30px;
+}
+
+.website_portfolio > img {
+	width: 790px;
+	height: 390px;
+	margin: 40px;
+}
+
+.website_team--header {
+	height: 55px;
+	font-size: 30px;
+}
+
+.website_team {
+	padding-bottom: 120px;
+	padding-top: 120px;
+}
+
+.website_map {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 500px;
+}
+
+.website_contact {
+	height: 350px;
+}
+
+.website_contact--header {
+	font-size: 30px;
+}
+
+.website_contact--elements {
+	display: flex;
+	justify-content: center;
+}
+
+.website_contact--elements > a {
+	padding: 20px;
 }
 }
