@@ -16,8 +16,7 @@
 
 .website_introduction {
 	font-family: 'Roboto', sans-serif;
-	background-color: #EFF9F0;
-	color: black;
+	color: #EFF9F0;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -25,6 +24,9 @@
 	padding-bottom: 20px;
 	padding-left: 8px;
 	padding-right: 8px;
+	background-image: url('team/mac2.jpg');
+	background-size: cover;
+	/*Photo by Luca Bravo on Unsplash*/
 }
 
 .website_categories {
@@ -291,7 +293,8 @@
 }
 
 .website_introduction {
-	height: 480px;
+	height: 550px;
+	font-size: 20px;
 }
 
 .website_categories > p {
