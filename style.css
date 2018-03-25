@@ -53,6 +53,10 @@
 	color: white;
 }
 
+.website_categories--portfolio {
+	scroll-behavior: smooth;
+}
+
 .website_portfolio {
 	background-color: #EFF9F0;
 	display: flex;
@@ -114,12 +118,12 @@
 	width: 100%;
 	padding-top: 10px;
 	border: 0;
-	background-color: #00072D;
 }
 
 .website_contact {
 	padding-top: 0;
 	margin: 5px;
+	margin-top: 0;
 	background-color: #00072D;
 	color: white;
 	display: flex;
@@ -237,7 +241,7 @@
 }
 
 .website_contact {
- height: 300px;
+ height: 350px;
 }
 
 .website_contact--elements {
