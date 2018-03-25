@@ -29,6 +29,14 @@
 	/*Photo by Luca Bravo on Unsplash*/
 }
 
+.website_introduction--paragraph {
+	display: none;
+}
+
+.shown {
+	display: block;
+}
+
 .website_categories {
 	border-color: #00072D;
 	border-style: solid;
@@ -114,9 +122,13 @@
 	font-family: 'Roboto', sans-serif;
 	padding-top: 15px;
 	background-color: #00072D;
+	padding-right: auto;
+	padding-left: auto;
 }
 
 .website_contact {
+	padding-top: 0;
+	margin-top: 0;
 	background-color: #00072D;
 	color: white;
 }
