@@ -3,6 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	background-color: #EFF9F0;
+	scroll-behavior: smooth;
 }
 
 .website_header {
@@ -116,21 +117,21 @@
 	background-color: #00072D;
 }
 
-.website_contact--header {
+.website_contact {
+	padding-top: 0;
+	margin: 5px;
+	background-color: #00072D;
+	color: white;
 	display: flex;
 	justify-content: center;
+}
+
+.website_contact--header {
 	font-family: 'Roboto', sans-serif;
 	padding-top: 15px;
 	background-color: #00072D;
 	padding-right: auto;
 	padding-left: auto;
-}
-
-.website_contact {
-	padding-top: 0;
-	margin-top: 0;
-	background-color: #00072D;
-	color: white;
 }
 
 .website_contact--elements {
@@ -242,6 +243,7 @@
 .website_contact--elements {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .website_contact--elements > a {
@@ -357,7 +359,7 @@
 }
 
 .website_contact--elements {
-	display: flex;
+	align-items: center;
 	justify-content: center;
 }
 

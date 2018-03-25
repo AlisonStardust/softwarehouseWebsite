@@ -4,9 +4,9 @@ const teamLink = document.querySelector('.website_categories--team');
 const contactLink = document.querySelector('.website_categories--contact');
 const paragraph = document.querySelector('.website_introduction--paragraph')
 
-// $(document).ready(function(){
-// $('website_categories--portfolio').scrollTo();
-// }
+//function to add animations
+
+function wholeWebsite() {
 
 function animations() {
   setTimeout(func1, 1500);
@@ -18,10 +18,20 @@ function func1() {
 
 animations();
 
-// function websiteHandler() {
-//   portfolioLink.addEventListener("click", function MoveToElement() {
-//     alert('dupa')
-//     window.scrollTo(10, 1000); 
-//   }
-// }
-// websiteHandler();
+//scrolling function
+function websiteHandler() {
+  portfolioLink.addEventListener("click", function MoveToElement() {
+    window.scrollTo(0, 1000); 
+  });
+  teamLink.addEventListener("click", function MoveToElement() {
+    window.scrollTo(0, 1000); 
+  });
+  contactLink.addEventListener("click", function MoveToElement() {
+    window.scrollTo(0, 1000); 
+  });
+}
+websiteHandler();
+
+}
+
+wholeWebsite();
