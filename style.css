@@ -46,6 +46,7 @@
 	border-style: solid;
 	background-color: #00072D;
 	font-family: 'Roboto', sans-serif;
+	cursor: pointer;
 }
 
 .website_categories > p {
