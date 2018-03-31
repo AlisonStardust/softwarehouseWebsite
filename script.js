@@ -3,35 +3,28 @@ const portfolioLink = document.querySelector('.website_categories--portfolio');
 const teamLink = document.querySelector('.website_categories--team');
 const contactLink = document.querySelector('.website_categories--contact');
 const paragraph = document.querySelector('.website_introduction--paragraph')
-
-//function to add animations
+const portoflio = document.querySelector('.website_portfolio')
+const team = document.querySelector('.website_team')
+const contact = document.querySelector('.website_contact')
 
 function wholeWebsite() {
+  showDescription();
+}
 
-function animations() {
-  setTimeout(func1, 1500);
+function showDescription() {
+  setTimeout(() => paragraph.classList.add('shown'), 1500)
 };
 
-function func1() {
-  paragraph.classList.add('shown');
-}
-
-animations();
-
 //scrolling function
-function websiteHandler() {
-  portfolioLink.addEventListener("click", function MoveToElement() {
-    window.scrollTo(0, 1000); 
-  });
-  teamLink.addEventListener("click", function MoveToElement() {
-    window.scrollTo(0, 1000); 
-  });
-  contactLink.addEventListener("click", function MoveToElement() {
-    window.scrollTo(0, 1000); 
-  });
-}
-websiteHandler();
 
-}
+portfolioLink.addEventListener("click", function MoveToPortfolio() {
+  portoflio.scrollIntoView({ behavior: 'smooth' }); 
+});
+teamLink.addEventListener("click", function MoveToTeam() {
+  team.scrollIntoView({ behavior: 'smooth' }); 
+});
+contactLink.addEventListener("click", function MoveToContact() {
+  contact.scrollIntoView({ behavior: 'smooth' });  
+});
 
 wholeWebsite();

@@ -27,6 +27,9 @@
 	padding-right: 8px;
 	background-image: url('team/mac2.jpg');
 	background-size: cover;
+	background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
 	/*Photo by Luca Bravo on Unsplash*/
 }
 
@@ -151,6 +154,9 @@
 
 .website_introduction {
 	height: 450px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
 }
 
 .website_categories > p {
@@ -211,6 +217,9 @@
 
 .website_introduction {
   height: 450px;
+      background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top; 
 }
 
 .website_categories > p {
@@ -241,7 +250,8 @@
 }
 
 .website_contact {
- height: 350px;
+	padding-top: 25px;
+	height: 350px;
 }
 
 .website_contact--elements {
@@ -251,7 +261,7 @@
 }
 
 .website_contact--elements > a {
-	padding: 18px;
+	padding: 25px;
 }
 }
 
@@ -294,7 +304,12 @@
 	font-size: 30px;
 }
 
+.website_contact {
+	height: 350px;
+}
+
 .website_contact--elements {
+	padding-top: 25px;
 	display: flex;
 	justify-content: center;
 }
