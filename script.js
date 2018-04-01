@@ -2,10 +2,12 @@ const categories = document.querySelector('.website_categories');
 const portfolioLink = document.querySelector('.website_categories--portfolio');
 const teamLink = document.querySelector('.website_categories--team');
 const contactLink = document.querySelector('.website_categories--contact');
-const paragraph = document.querySelector('.website_introduction--paragraph')
-const portfolio = document.querySelector('.website_portfolio')
-const team = document.querySelector('.website_team')
-const contact = document.querySelector('.website_contact')
+const paragraph = document.querySelector('.website_introduction--paragraph');
+const portfolio = document.querySelector('.website_portfolio');
+const team = document.querySelector('.website_team');
+const contact = document.querySelector('.website_contact');
+const canvas = document.querySelector('.website_portfolio--canvas');
+const canvasPainting = canvas.getContext('2d');
 
 const moveToPortfolio = () => moveToElement(portfolio);
 const moveToTeam = () => moveToElement(team);
@@ -16,6 +18,7 @@ function wholeWebsite() {
   portfolioLink.addEventListener("click", moveToPortfolio);
   teamLink.addEventListener("click", moveToTeam);
   contactLink.addEventListener("click", moveToContact);
+  animate();
 }
 
 function showDescription() {
@@ -26,6 +29,19 @@ function moveToElement(where) {
   where.scrollIntoView({
     behavior: 'smooth'
   });
+}
+
+let x = 100;
+function animate() {
+  const innerWidth = canvas.width;
+  const innerHeight = canvas.height;
+  requestAnimationFrame(animate);
+  canvasPainting.clearRect(10, 10, 10, 10);
+  canvasPainting.beginPath();
+  canvasPainting.arc(x, 100, 20, 0, Math.PI * 2, false);
+  canvasPainting.strokeStyle = 'red';    
+  canvasPainting.stroke();
+  //x += 1;
 }
 
 wholeWebsite();
