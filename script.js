@@ -31,17 +31,21 @@ function moveToElement(where) {
   });
 }
 
+// canvas.width = innerWidth;
+// canvas.height = 100px;
+
 let x = 100;
 function animate() {
-  const innerWidth = canvas.width;
-  const innerHeight = canvas.height;
-  requestAnimationFrame(animate);
-  canvasPainting.clearRect(10, 10, 10, 10);
-  canvasPainting.beginPath();
-  canvasPainting.arc(x, 100, 20, 0, Math.PI * 2, false);
-  canvasPainting.strokeStyle = 'red';    
-  canvasPainting.stroke();
-  //x += 1;
+  canvasPainting.fillStyle = "#92B901";
+  canvasPainting.fillRect(10, 10, 10, 10);
+  // requestAnimationFrame(animate);
+  // //canvasPainting.clearRect(100, 100, 100, 100);
+  // canvasPainting.beginPath();
+  // canvasPainting.arc(x, 100, 100, 0, Math.PI * 2, false);
+  // canvasPainting.lineWidth = 20;
+  // canvasPainting.strokeStyle = 'red';    
+  // canvasPainting.stroke();
+  // //x += 1;
 }
 
 wholeWebsite();
