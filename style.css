@@ -303,14 +303,8 @@
 }
 
 .website_portfolio > img {
-	width: 790px;
-	height: 390px;
-	margin: 40px;
-}
-
-.website_portfolio > img {
-	height: 200px;
-	width: 200px;
+	width: 632px;
+	height: 312px;
 }
 
 .website_team--header {
@@ -328,17 +322,17 @@
 	height: 400px;
 }
 
-.website_contact--header {
-	font-size: 30px;
-}
 
 .website_contact {
 	height: 350px;
 }
 
+.website_contact--header {
+	font-size: 30px;
+}
+
 .website_contact--elements {
-	padding-top: 25px;
-	display: flex;
+	align-items: center;
 	justify-content: center;
 }
 
