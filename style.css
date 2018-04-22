@@ -47,14 +47,18 @@
 	background-color: #00072D;
 	font-family: 'Roboto', sans-serif;
 	cursor: pointer;
+	display: flex;
+	justify-content: center;
 }
 
 .website_categories > p {
+	padding: 20px;
 	border-bottom-color: white;
 	border-bottom-style: solid;
 	display: flex;
 	align-items: flex-end;
 	color: white;
+	font-size: 1.3em;
 }
 
 .website_categories--portfolio {
@@ -288,6 +292,22 @@
 	height: 90px;
 }
 
+.website_portfolio {
+	height: 1200px;
+}
+
+.website_portfolio > span {
+	font-family: 'Roboto', sans-serif;
+	padding-bottom: 60px;
+	font-size: 30px;
+}
+
+.website_portfolio > img {
+	width: 790px;
+	height: 390px;
+	margin: 40px;
+}
+
 .website_portfolio > img {
 	height: 200px;
 	width: 200px;
@@ -342,6 +362,9 @@
 
 .website_categories > p {
 	height: 90px;
+	padding-left: 40px;
+	padding-right: 40px;
+	font-size: 2em;
 }
 
 .website_portfolio {
