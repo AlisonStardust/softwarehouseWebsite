@@ -126,6 +126,12 @@
 	justify-content: center;
 	padding-top: 5px;
 	background-color: #EFF9F0;
+	background-image: url(team/trianglify.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #091540;
+  margin-bottom: 40px;
 }
 
 .website_team--description {
