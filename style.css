@@ -6,6 +6,22 @@
 	scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #EFF9F0; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00072D; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00072D; 
+}
+
 .website_header {
 	font-family: 'Orbitron', sans-serif;
 	background-color: #00072D;
@@ -137,7 +153,6 @@
 
 .website_contact {
 	padding-top: 0;
-	margin: 5px;
 	margin-top: 0;
 	background-color: #00072D;
 	color: white;
