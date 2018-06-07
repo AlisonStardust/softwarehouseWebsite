@@ -24,11 +24,15 @@
 
 .website_header {
 	font-family: 'Orbitron', sans-serif;
-	background-color: #00072D;
+	border: 3px solid #00072D;
 	color: white;
 	text-align: center;
 	font-weight: bold;
 	letter-spacing: 2px;
+	background-image: url(team/trianglify2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .website_introduction {
@@ -65,6 +69,10 @@
 	cursor: pointer;
 	display: flex;
 	justify-content: center;
+	background-image: url(team/trianglify2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .website_categories > p {
@@ -98,7 +106,6 @@
 
 .website_portfolio > span {
 	font-family: 'Roboto', sans-serif;
-	padding-bottom: 60px;
 }
 
 .website_portfolio > img {
@@ -140,9 +147,11 @@
 
 .website_team > img:hover {
  opacity: 0.5; 
+ background-color: white;
 }
 
 .website_team > img {
+	background-color: white;
 	border-radius: 100px;
 	border-color: #00072D;
 	border-style: solid;
@@ -176,6 +185,10 @@
 
 .website_contact--elements {
 	display: flex;
+}
+
+.image:hover {
+	opacity: 0.6;
 }
 
 @media (min-width: 10px) and (max-width: 480px) {
@@ -307,6 +320,7 @@
 }
 .website_introduction {
 	height: 480px;
+	font-size: 2.8em;
 }
 
 .website_categories > p {
@@ -372,7 +386,7 @@
 
 .website_introduction {
 	height: 550px;
-	font-size: 20px;
+	font-size: 3.2em;
 }
 
 .website_categories > p {
